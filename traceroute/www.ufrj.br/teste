@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in $(seq 0 9);
+do
+  date >> tr.txt
+  traceroute -4 www.ufrj.br >> tr.txt
+done
